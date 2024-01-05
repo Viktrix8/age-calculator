@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+body {
+    background: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    /* padding: 20px; */
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+section {
+    background: hsl(0, 0%, 100%);
+    padding: 50px;   
+    width: 700px;
+    border-radius: 15px 15px 200px 15px;
+    box-shadow: 0 0 50px hsla(0, 0%, 86%, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        width: 85vw;
+        border-radius: 15px 15px 150px 15px;
+        padding: 30px;
+    }
+}
+
+input {
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    width: 100px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-weight: 800;
+    color: hsl(0, 1%, 44%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.input__container {
+    display: flex;
+    gap: 30px;
+}
+
+.input__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.divider__container {
+    margin: 50px 0;
+    position: relative;
+}
+
+.divider__divider {
+    border: .5px solid hsl(0, 0%, 86%); 
+}
+
+.divider__icon {
+    background-color: hsl(259, 100%, 65%);
+    padding: 20px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: -35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .divider__icon {
+        left: 45%;
+    }
+}
+
+
+.date__placeholder {
+    color:  hsl(259, 100%, 65%);
+    letter-spacing: 10px;
+}
+
+
+.date__text {
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+    .date__text {
+        font-size: 60px;
+    }
+}
